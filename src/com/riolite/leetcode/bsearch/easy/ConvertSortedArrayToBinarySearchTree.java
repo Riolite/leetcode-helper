@@ -6,6 +6,11 @@ import com.riolite.leetcode.model.TreeNode;
 import java.util.Arrays;
 
 public class ConvertSortedArrayToBinarySearchTree {
+    /*
+    Simply put, this function finds the middle element of the array and splits
+    it around the middle element into left and right subarrays. It then recursively calculates
+     the middle element of each subarray.
+     */
     public static TreeNode sortedArrayToBST(int[] nums) {
         if (nums.length < 1) {
             return null;
@@ -21,10 +26,16 @@ public class ConvertSortedArrayToBinarySearchTree {
         return new TreeNode(middleValue, left, right);
     }
 
+    /*
+        A wrapper for _sortedArrayBSTOptimized(int[] nums, int start, int end).
+    */
     public static TreeNode sortedArrayToBSTOptimized(int[] nums) {
         return _sortedArrayBSTOptimized(nums, 0, nums.length - 1);
     }
-
+    
+    /*
+        An optimized version of sortedArrayToBST(int[] nums) where no new arrays are constructed.
+    */
     public static TreeNode _sortedArrayBSTOptimized(int[] nums, int start, int end) {
         int length = end - start + 1;
         if (length < 1) {
