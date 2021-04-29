@@ -5,6 +5,7 @@ import com.riolite.leetcode.model.TreeNode;
 
 import java.util.Arrays;
 
+//https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
 public class ConvertSortedArrayToBinarySearchTree {
     /*
     Simply put, this function finds the middle element of the array and splits
@@ -32,7 +33,7 @@ public class ConvertSortedArrayToBinarySearchTree {
     public static TreeNode sortedArrayToBSTOptimized(int[] nums) {
         return _sortedArrayBSTOptimized(nums, 0, nums.length - 1);
     }
-    
+
     /*
         An optimized version of sortedArrayToBST(int[] nums) where no new arrays are constructed.
     */
