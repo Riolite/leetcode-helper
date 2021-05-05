@@ -1,4 +1,4 @@
-package com.riolite.leetcode.bsearch.easy;
+package com.riolite.leetcode.easy;
 
 import java.util.Arrays;
 import java.util.stream.Stream;
