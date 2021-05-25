@@ -1,7 +1,5 @@
 package com.riolite.leetcode.hard;
 
-import java.util.Arrays;
-
 //https://leetcode.com/problems/first-missing-positive/
 public class FirstMissingPositive {
 
