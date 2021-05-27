@@ -16,10 +16,15 @@ public class ListNode {
         this.next = next;
     }
 
+    public String print() {
+        return val +" "+((next!=null)?next.print():"");
+    }
+
     @Override
     public String toString() {
         return "ListNode{" +
                 "val=" + val +
+                ",next="+((next != null)?next.val:"null")+
                 '}';
     }
 }
